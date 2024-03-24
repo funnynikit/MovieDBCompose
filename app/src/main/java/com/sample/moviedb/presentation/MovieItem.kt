@@ -41,7 +41,7 @@ import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import coil.size.Size
 import com.sample.moviedb.domain.model.Movie
-import com.sample.moviedb.presentation.NavController.Screen
+import com.sample.moviedb.nav.Screens
 import com.sample.moviedb.utils.Constants
 import com.sample.moviedb.utils.getAverageColor
 
@@ -77,7 +77,7 @@ fun MovieItem(
                 )
             )
             .clickable {
-                navHostController.navigate(Screen.Details.rout + "/${movie.id}")
+                navHostController.navigate(Screens.Detail.screen + "/${movie.id}")
             }
     ) {
         if (imageState is AsyncImagePainter.State.Error) {

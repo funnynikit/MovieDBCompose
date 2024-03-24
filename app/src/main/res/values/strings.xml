@@ -8,4 +8,7 @@
     <string name="release_date">"Release Date: "</string>
     <string name="votes">" Votes"</string>
     <string name="overview">Overview</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="logout">Logout</string>
 </resources>

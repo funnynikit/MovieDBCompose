@@ -65,7 +65,7 @@ fun DetailsScreen()
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .verticalScroll(rememberScrollState())
+            .verticalScroll(rememberScrollState()).padding(top = 70.dp, bottom = 70.dp)
     ) {
         if (backDropImageState is AsyncImagePainter.State.Error) {
             Box(
